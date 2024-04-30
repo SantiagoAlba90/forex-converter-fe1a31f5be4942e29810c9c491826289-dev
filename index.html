@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        form { max-width: 400px; margin: auto; }
+        label, input { display: block; width: 100%; margin-bottom: 10px; }
+        input[type="submit"] { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        .message { max-width: 400px; margin: auto; padding: 10px; }
+        .error { background-color: #f44336; color: white; }
+        .success { background-color: #4CAF50; color: white; }
+    </style>
+</head>
+<body>
+    <h2>Currency Converter</h2>
+    <form method="post">
+        <label for="from_currency">Currency Code to Convert From:</label>
+        <input type="text" id="from_currency" name="from_currency" required>
+
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" name="amount" required>
+
+        <label for="to_currency">Currency Code to Convert To:</label>
+        <input type="text" id="to_currency" name="to_currency" required>
+
+        <input type="submit" value="Convert">
+    </form>
+</body>
+</html>
